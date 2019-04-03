@@ -92,7 +92,7 @@ namespace Calc1
                             while (op.Count > 0 && op.Peek().Operator != "(")
                             {
                                 rpn.Add(new RpnModel { Token = op.Pop().Operator, TokenType = IsOperator });
-                                //op.RemoveAt(op.Count - 1);
+                                
                             }
                             //make sure we haven't reached the end without finding a "("
                             if (op.Count == 0)
